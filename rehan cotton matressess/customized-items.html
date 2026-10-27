@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Sizes | Rehan Cotton Mattresses</title>
+    <style>
+        :root { --ink: #1d2a27; --muted: #61706b; --cream: #f8f5ef; --paper: #fffdf9; --sage: #dce9df; --green: #285c4d; --deep-green: #163d34; --gold: #c38d4d; --line: #dfe6df; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--cream); color: var(--ink); font-family: Arial, sans-serif; line-height: 1.6; }
+        a { color: inherit; text-decoration: none; }
+        .container { margin: 0 auto; max-width: 1080px; padding: 0 28px; }
+        header { background: var(--deep-green); color: #fff; padding: 20px 0; }
+        .nav { align-items: center; display: flex; justify-content: space-between; }
+        .brand { font-family: Georgia, serif; font-size: 1.4rem; }
+        .back { color: #d7e3dd; font-size: .9rem; font-weight: 700; }
+        .hero { padding: 80px 0 58px; text-align: center; }
+        .eyebrow { color: var(--gold); font-size: .76rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+        h1, h2, h3 { font-family: Georgia, serif; line-height: 1.2; }
+        h1 { color: var(--deep-green); font-size: clamp(2.4rem, 6vw, 4.3rem); margin: 12px auto 16px; }
+        .intro { color: var(--muted); margin: auto; max-width: 590px; }
+        .size-section { padding: 35px 0 70px; }
+        .section-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 24px; }
+        h2 { color: var(--deep-green); font-size: 2.2rem; }
+        .section-heading p { color: var(--muted); font-size: .9rem; }
+        .size-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
+        .size-card { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 26px; }
+        .size-card.featured { border-color: var(--gold); box-shadow: 0 12px 30px rgba(30, 54, 45, .08); }
+        .size-card-image { border-radius: 4px; display: block; height: auto; margin: -12px auto 20px; max-width: 100%; width: 100%; }
+        .size-icon { background: var(--sage); border-radius: 50%; display: grid; font-size: 1.5rem; height: 56px; place-items: center; width: 56px; }
+        .size-card h3 { color: var(--deep-green); font-size: 1.35rem; margin: 19px 0 5px; }
+        .measurement { color: var(--gold); font-size: 1.45rem; font-weight: 700; }
+        .size-card p { color: var(--muted); font-size: .88rem; margin-top: 10px; }
+        .quilt-grid { grid-template-columns: repeat(2, 1fr); }
+        .preference { color: var(--gold); font-size: .92rem; font-weight: 700; margin-top: 10px; }
+        .custom-note { background: var(--sage); border-radius: 8px; margin: 0 0 80px; padding: 30px; text-align: center; }
+        .custom-note h2 { font-size: 1.7rem; margin-bottom: 7px; }
+        .custom-note p { color: var(--muted); margin: auto auto 18px; max-width: 580px; }
+        .button { background: var(--green); border-radius: 4px; color: #fff; display: inline-block; font-size: .86rem; font-weight: 700; padding: 12px 20px; }
+        footer { background: var(--deep-green); color: #c9d7d0; font-size: .8rem; padding: 22px 0; text-align: center; }
+        @media (max-width: 700px) {
+            .hero { padding-top: 55px; }
+            .section-heading { align-items: start; flex-direction: column; gap: 7px; }
+            .size-grid, .quilt-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <a class="brand" href="rehan.html">Rehan Cotton Mattresses</a>
+            <a class="back" href="rehan.html#products">← Back to products</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">Made to fit your home</p>
+                <h1>Customized comfort</h1>
+                <p class="intro">Choose the size and preference that suits your home. Our cotton mattresses, quilts, pillows, and cushions are made with care and prepared for your requirements.</p>
+            </div>
+        </section>
+
+        <section class="size-section" id="mattress-sizes">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Cotton mattress sizes</h2>
+                    <p>Available in these popular sizes</p>
+                </div>
+                <div class="size-grid">
+                    <article class="size-card">
+                        <img class="size-card-image" src="mattress-3x6.png" alt="3 feet by 6 feet single bed mattress size guide">
+                        <div class="size-icon">🛏️</div>
+                        <h3>Single bed</h3>
+                        <div class="measurement">3 × 6 feet</div>
+                        <p>Comfortable sizing for one person and compact bedrooms.</p>
+                    </article>
+                    <article class="size-card featured">
+                        <img class="size-card-image" src="mattress-4x6.png" alt="4 feet by 6 feet queen or diwaan mattress size guide">
+                        <div class="size-icon">🛏️</div>
+                        <h3>Queen size</h3>
+                        <div class="measurement">4 × 6 feet</div>
+                        <p>A practical choice for couples and everyday family comfort.</p>
+                    </article>
+                    <article class="size-card">
+                        <img class="size-card-image" src="mattress-6x6.png" alt="6 feet by 6 feet king size mattress size guide">
+                        <div class="size-icon">🛏️</div>
+                        <h3>Double bed / King size</h3>
+                        <div class="measurement">6 × 6 feet</div>
+                        <p>Extra space for a generous double-bed sleeping area.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="size-section" id="quilt-sizes">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Cotton quilt sizes</h2>
+                    <p>Warmth for every bed</p>
+                </div>
+                <div class="size-grid quilt-grid">
+                    <article class="size-card">
+                        <div class="size-icon">🌙</div>
+                        <h3>Single bed quilt</h3>
+                        <p>Made for a single bed, with cosy coverage for one person.</p>
+                    </article>
+                    <article class="size-card featured">
+                        <div class="size-icon">🌙</div>
+                        <h3>Double bed quilt</h3>
+                        <p>Generous coverage for double, queen, and king-size beds.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="size-section" id="pillow-sizes">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Cotton pillow sizes</h2>
+                    <p>Choose your preferred support</p>
+                </div>
+                <div class="size-grid">
+                    <article class="size-card">
+                        <div class="size-icon">☁️</div>
+                        <h3>Standard pillow</h3>
+                        <div class="measurement">16 × 24 inches</div>
+                        <div class="preference">Soft or medium filling</div>
+                        <p>A comfortable everyday pillow for single and double beds.</p>
+                    </article>
+                    <article class="size-card featured">
+                        <div class="size-icon">☁️</div>
+                        <h3>Large pillow</h3>
+                        <div class="measurement">18 × 27 inches</div>
+                        <div class="preference">Medium or firm filling</div>
+                        <p>Extra room and support for a fuller sleeping pillow.</p>
+                    </article>
+                    <article class="size-card">
+                        <div class="size-icon">☁️</div>
+                        <h3>Custom pillow</h3>
+                        <div class="measurement">Made to order</div>
+                        <div class="preference">Your size and firmness</div>
+                        <p>Tell us your preferred dimensions, filling, and cover fabric.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="size-section" id="cushion-sizes">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Cushion sizes</h2>
+                    <p>Comfort and style made for your space</p>
+                </div>
+                <div class="size-grid">
+                    <article class="size-card">
+                        <div class="size-icon">🧺</div>
+                        <h3>Square cushion</h3>
+                        <div class="measurement">16 × 16 inches</div>
+                        <div class="preference">Soft, medium, or firm</div>
+                        <p>A versatile size for sofas, chairs, and everyday lounging.</p>
+                    </article>
+                    <article class="size-card featured">
+                        <div class="size-icon">🧺</div>
+                        <h3>Large cushion</h3>
+                        <div class="measurement">18 × 18 inches</div>
+                        <div class="preference">Your preferred filling</div>
+                        <p>Generous comfort for larger sofas and relaxed seating.</p>
+                    </article>
+                    <article class="size-card">
+                        <div class="size-icon">🧺</div>
+                        <h3>Custom cushion</h3>
+                        <div class="measurement">Made to order</div>
+                        <div class="preference">Size, shape, and fabric</div>
+                        <p>Choose the dimensions, cover style, and filling for your room.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="custom-note">
+                <h2>Need a different size?</h2>
+                <p>We also discuss custom requirements for your room. Call us to confirm availability, fabric, filling, and finishing details.</p>
+                <a class="button" href="tel:+919928347942">Call +91 99283 47942</a>
+            </div>
+        </div>
+    </main>
+
+    <footer><div class="container">Rehan Cotton Mattresses · 18 years of comfort and trust</div></footer>
+</body>
+</html>
